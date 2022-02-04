@@ -16,17 +16,17 @@ const newsSources = [
     {
         name: 'Business-Standard',
         address:'https://www.business-standard.com/topic/cryptocurrency',
-        base: ''
+        base: 'https://www.business-standard.com'
     },
     {
-        name:'Coindesk',
-        address:'https://www.coindesk.com/markets/',
+        name:'The-Economist',
+        address:'https://www.economist.com/finance-and-economics',
         base:''
     }
 ]
 
 newsSources.forEach(newsSource=>{
-    axios.get('https://www.moneycontrol.com/news/tags/cryptocurrency.html')
+    axios.get(newsSource.address)
     .then((response)=>{
         const html = response.data;
         const $ = cheerio.load(html)
@@ -37,14 +37,14 @@ newsSources.forEach(newsSource=>{
 
             articles.push({
                 title,
-                url,
+                url:newsSource.base + url,
                 source: newsSource.name
             })
         })
     })
 })
 
-app.get('/', (req,res)=>{
+app.get('/articles', (req,res)=>{
     res.json(articles)
 })
 
