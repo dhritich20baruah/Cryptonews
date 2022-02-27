@@ -10,7 +10,7 @@ const articles =[];
 const newsSources = [
     {
         name: 'MoneyControl',
-        address:'https://www.moneycontrol.com/news/tags/cryptocurrency.html',
+        address:'https://www.moneycontrol.com/',
         base: ''
     },
     {
