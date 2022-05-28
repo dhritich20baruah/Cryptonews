@@ -1,4 +1,4 @@
-const economics = [
+module.exports = [
     {
         name: 'India Times',
         address: '',

@@ -1,4 +1,4 @@
-const international = [
+module.exports = [
     {
         name: 'India Times',
         address: '',

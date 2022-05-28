@@ -1,4 +1,4 @@
-const sports = [
+module.exports = [
     {
         name: 'India Times',
         address: '',

@@ -1,4 +1,4 @@
-const entertainment = [
+module.exports = [
     {
         name: 'India Times',
         address: '',

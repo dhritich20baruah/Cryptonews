@@ -1,4 +1,4 @@
-const national = [
+module.exports = [
     {
         name: 'India Times',
         address: 'https://timesofindia.indiatimes.com/india',
@@ -41,4 +41,3 @@ const national = [
     }
 ]
 
-export default national

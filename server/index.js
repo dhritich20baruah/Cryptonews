@@ -2,10 +2,14 @@ const PORT = 2000;
 const express = require('express');
 const cheerio = require('cheerio');
 const axios = require('axios');
-
+const cors = require('cors');
 const app = express();
 
+app.use(cors())
+
 const articles =[];
+
+// const newsSources = require('./categories/national')
 
 const newsSources = [
     {
@@ -47,5 +51,5 @@ newsSources.forEach(newsSource=>{
 app.get('/articles', (req,res)=>{
     res.json(articles)
 })
-
+console.log(articles)
 app.listen(PORT, ()=>console.log(`Server running at port ${PORT}`));

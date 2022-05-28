@@ -1,62 +1,45 @@
-const science = [
+module.exports = [
     {
         name: 'India Times',
-        address: '',
+        address: 'https://timesofindia.indiatimes.com/',
         base: ''
     },
-    {
-        name: 'Dainik Bhaskar',
-        address: '',
-        base: ''
-    },
-    {
-        name: 'Manorama',
-        address: '',
-        base: ''
-    },
+    
     {
         name: 'The Indian Express',
-        address: '',
+        address: 'https://indianexpress.com/',
         base: ''
     },
     {
         name: 'The Hindu',
-        address: '',
+        address: 'https://www.thehindu.com/',
         base: ''
     },
-    {
-        name: 'ABP',
-        address: '',
-        base: ''
-    },
-    {
-        name: 'Dainik Jagran',
-        address: '',
-        base: ''
-    },
+  
+ 
     {
         name: 'Hindustan Times',
-        address: '',
+        address: 'https://www.hindustantimes.com/',
         base: ''
     },
     {
         name: 'News18',
-        address:'',
+        address:'https://www.news18.com/',
         base:''
     },
     {
         name: 'Wion',
-        address: '',
+        address: 'https://www.wionews.com/',
         base:''
     },
     {
         name: 'Business Standard',
-        address: '',
+        address: 'https://www.business-standard.com/',
         base: ''
     },
     {
         name: 'DNA',
-        address: '',
+        address: 'https://www.dnaindia.com/',
         base: ''
     }
 ]
